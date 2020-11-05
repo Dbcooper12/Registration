@@ -50,6 +50,21 @@ public class MainActivity extends AppCompatActivity {
         //cargar imágen con glide:
         //Glide.with(this).load(url).into(userImg);
 
+
+        Button btnMenu =(Button) findViewById(R.id.btnMenuPrincipal);
+
+        btnMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,MenuInicio.class);
+                MainActivity.this.startActivity(intent);
+            }
+        });
+
+
+
+
+
         btnCerrarSesion.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
