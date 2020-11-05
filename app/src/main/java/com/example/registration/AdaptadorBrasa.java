@@ -54,6 +54,7 @@ public class AdaptadorBrasa extends BaseAdapter {
             public void onClick(View view) {
                 Intent visorDetalles = new Intent(context,DetalleBrasaRoja.class);
                 visorDetalles.putExtra("PRE", datos[i][2]);
+                visorDetalles.putExtra("FEC", datos[i][4]);
                 visorDetalles.putExtra("REP", datos[i][5]);
                 context.startActivity(visorDetalles);
             }

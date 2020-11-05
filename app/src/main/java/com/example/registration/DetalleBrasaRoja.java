@@ -27,7 +27,7 @@ public class DetalleBrasaRoja extends AppCompatActivity {
 
         final TextView preciow = (TextView) findViewById(R.id.Precio);
         final TextView Personal = (TextView) findViewById(R.id.PersonalEntrega);
-        final TextView FechaP = (TextView) findViewById(R.id.Fecha);
+        final TextView FechaP = (TextView) findViewById(R.id.FechaP);
 
         etCantidad  =  (EditText) findViewById(R.id.cantidad);
 
@@ -39,8 +39,9 @@ public class DetalleBrasaRoja extends AppCompatActivity {
 
         if(b!=null){
             preciow.setText(b.getString("PRE"));
-            Personal.setText(b.getString("REP"));
             FechaP.setText(b.getString("FEC"));
+           Personal.setText(b.getString("REP"));
+
         }
 
         Button btnPedido = (Button) findViewById(R.id.btnPedirPedido);
