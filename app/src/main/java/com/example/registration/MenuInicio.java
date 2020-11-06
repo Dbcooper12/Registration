@@ -13,6 +13,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.ImageButton;
 
 public class MenuInicio extends AppCompatActivity {
 
@@ -28,6 +29,16 @@ public class MenuInicio extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MenuInicio.this,MainActivity.class);
+                MenuInicio.this.startActivity(intent);
+            }
+        });
+        ImageButton  btnbrasaroja = (ImageButton) findViewById(R.id.brasaroja);
+
+        btnbrasaroja.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MenuInicio.this,brazaroja.class);
+
                 MenuInicio.this.startActivity(intent);
             }
         });
