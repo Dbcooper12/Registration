@@ -64,7 +64,7 @@ public class DetalleBrasaRoja extends AppCompatActivity {
                             JSONObject jsonResponse = new JSONObject(response);
                             boolean success = jsonResponse.getBoolean("success");
                             if (success) {
-                                Intent intent = new Intent(DetalleBrasaRoja.this,PedidoExitBrasa.class);
+                                Intent intent = new Intent(DetalleBrasaRoja.this,PedidoCompletoBrasa.class);
                                 DetalleBrasaRoja.this.startActivity(intent);
                             } else {
                                 AlertDialog.Builder builder = new AlertDialog.Builder(DetalleBrasaRoja.this);
@@ -78,9 +78,6 @@ public class DetalleBrasaRoja extends AppCompatActivity {
                 RegistroPedidoRequest registerRequest = new RegistroPedidoRequest(personaEntrega, cantidad, fecha, precio,nombre,telefono, responListener);
                 RequestQueue queue = Volley.newRequestQueue(DetalleBrasaRoja.this);
                 queue.add(registerRequest);
-
-
-
 
             }
         });
