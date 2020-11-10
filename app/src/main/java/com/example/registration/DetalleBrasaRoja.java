@@ -64,7 +64,7 @@ public class DetalleBrasaRoja extends AppCompatActivity {
                             JSONObject jsonResponse = new JSONObject(response);
                             boolean success = jsonResponse.getBoolean("success");
                             if (success) {
-                                Intent intent = new Intent(DetalleBrasaRoja.this,PedidoExitBrasa.class);
+                                Intent intent = new Intent(DetalleBrasaRoja.this,PedidoCompletoBrasa.class);
                                 DetalleBrasaRoja.this.startActivity(intent);
                             } else {
                                 AlertDialog.Builder builder = new AlertDialog.Builder(DetalleBrasaRoja.this);
@@ -79,9 +79,6 @@ public class DetalleBrasaRoja extends AppCompatActivity {
                 RequestQueue queue = Volley.newRequestQueue(DetalleBrasaRoja.this);
                 queue.add(registerRequest);
 
-
-
-
             }
         });
 
@@ -91,7 +88,7 @@ public class DetalleBrasaRoja extends AppCompatActivity {
         btnCancelar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(DetalleBrasaRoja.this,MenuInicio.class);
+                Intent intent = new Intent(DetalleBrasaRoja.this,MenuInicio2.class);
 
                 DetalleBrasaRoja.this.startActivity(intent);
             }
