@@ -4,35 +4,56 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FAD14A">
+android:background="@drawable/gradiente_background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/brasaroja"
+            android:layout_width="wrap_content"
+            android:layout_height="197dp"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/labrasa" />
+
+        <ImageButton
+            android:id="@+id/popeyes"
+            android:layout_width="277dp"
+            android:layout_height="132dp"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/popeyes" />
+
+        <ImageButton
+            android:id="@+id/pizzahut"
+            android:layout_width="wrap_content"
+            android:layout_height="185dp"
+
+            android:contentDescription="@string/app_name"
+            android:onClick="pizzahutbtn"
+            app:srcCompat="@drawable/pizaa" />
+
+    </LinearLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
-        <ImageButton
-            android:id="@+id/imageButton2"
-            android:layout_width="26dp"
-            android:layout_height="43dp"
-            android:layout_marginStart="44dp"
-            android:layout_marginTop="4dp"
-            android:src="@android:drawable/ic_menu_sort_by_size"
-            android:tint="#F44336"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <Button
             android:id="@+id/cuenta"
             android:layout_width="91dp"
             android:layout_height="45dp"
-            android:layout_marginTop="4dp"
             android:text="@string/cuenta"
             android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/imageButton2"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.005" />
 
         <TextView
             android:id="@+id/textView2"
@@ -44,37 +65,21 @@
 
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.602"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.086" />
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0.082" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="26dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="4dp"
+            android:src="@android:drawable/ic_menu_sort_by_size"
+            android:tint="#F44336"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <ImageButton
-                android:id="@+id/brasaroja"
-                android:layout_width="wrap_content"
-                android:layout_height="197dp"
-                app:srcCompat="@drawable/labrasa" />
-
-            <ImageButton
-                android:id="@+id/popeyes"
-                android:layout_width="277dp"
-                android:layout_height="132dp"
-                app:srcCompat="@drawable/popeyes" />
-
-            <ImageButton
-                android:id="@+id/pizzahut"
-                android:layout_width="wrap_content"
-                android:layout_height="185dp"
-                app:srcCompat="@drawable/pizaa" />
-        </LinearLayout>
+            app:layout_constraintTop_toTopOf="parent" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

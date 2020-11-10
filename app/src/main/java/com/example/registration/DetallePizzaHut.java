@@ -1,14 +1,14 @@
 package com.example.registration;
 
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -17,13 +17,12 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class DetalleBrasaRoja extends AppCompatActivity {
+public class DetallePizzaHut extends AppCompatActivity {
     EditText etCantidad,etnombre,ettelefono;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detalle_brasa_roja);
+        setContentView(R.layout.activity_detalle_pizza_hut);
 
         final TextView preciow = (TextView) findViewById(R.id.Precio);
         final TextView Personal = (TextView) findViewById(R.id.PersonalEntrega);
@@ -40,7 +39,7 @@ public class DetalleBrasaRoja extends AppCompatActivity {
         if(b!=null){
             preciow.setText(b.getString("PRE"));
             FechaP.setText(b.getString("FEC"));
-           Personal.setText(b.getString("REP"));
+            Personal.setText(b.getString("REP"));
 
         }
 
@@ -64,10 +63,10 @@ public class DetalleBrasaRoja extends AppCompatActivity {
                             JSONObject jsonResponse = new JSONObject(response);
                             boolean success = jsonResponse.getBoolean("success");
                             if (success) {
-                                Intent intent = new Intent(DetalleBrasaRoja.this,PedidoExitBrasa.class);
-                                DetalleBrasaRoja.this.startActivity(intent);
+                                Intent intent = new Intent(DetallePizzaHut.this,PedidoExitPizza.class);
+                                DetallePizzaHut.this.startActivity(intent);
                             } else {
-                                AlertDialog.Builder builder = new AlertDialog.Builder(DetalleBrasaRoja.this);
+                                AlertDialog.Builder builder = new AlertDialog.Builder(DetallePizzaHut.this);
                                 builder.setMessage("Error registro").setNegativeButton("Retry", null).create().show();
                             }
                         } catch (JSONException e) {
@@ -76,7 +75,7 @@ public class DetalleBrasaRoja extends AppCompatActivity {
                     }
                 };
                 RegistroPedidoRequest registerRequest = new RegistroPedidoRequest(personaEntrega, cantidad, fecha, precio,nombre,telefono, responListener);
-                RequestQueue queue = Volley.newRequestQueue(DetalleBrasaRoja.this);
+                RequestQueue queue = Volley.newRequestQueue(DetallePizzaHut.this);
                 queue.add(registerRequest);
 
 
@@ -86,14 +85,14 @@ public class DetalleBrasaRoja extends AppCompatActivity {
         });
 
 
-        Button btnCancelar = (Button) findViewById(R.id.btncancelarB);
+        Button btnCancelar = (Button) findViewById(R.id.btncancelarP);
 
         btnCancelar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(DetalleBrasaRoja.this,MenuInicio2.class);
+                Intent intent = new Intent(DetallePizzaHut.this,MenuInicio2.class);
 
-                DetalleBrasaRoja.this.startActivity(intent);
+                DetallePizzaHut.this.startActivity(intent);
             }
         });
 

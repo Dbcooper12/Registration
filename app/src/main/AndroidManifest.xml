@@ -13,12 +13,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".PedidoExitBrasa" ></activity>
+        <activity android:name=".PedidoExitPizza"> </activity>
+        <activity android:name=".DetallePizzaHut" />
+        <activity android:name=".VisorImagenPizza" />
+        <activity android:name=".pizzahut" />
+        <activity android:name=".PedidoExitBrasa" />
         <activity android:name=".DetalleBrasaRoja" />
         <activity android:name=".VisorImagenBrasa" />
         <activity android:name=".brazaroja" />
-        <activity android:name=".MenuInicio2"/>
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".MenuInicio2" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".loginActivity" />
         <activity android:name=".inicio">

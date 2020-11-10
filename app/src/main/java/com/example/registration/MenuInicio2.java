@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 public class MenuInicio2 extends AppCompatActivity {
-
+    ImageButton btnpizzahut;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +33,34 @@ public class MenuInicio2 extends AppCompatActivity {
                 MenuInicio2.this.startActivity(intent);
             }
         });
+        pizzahutbtn();
+        btnpizzahut = (ImageButton) findViewById(R.id.pizzahut);
 
+        btnpizzahut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MenuInicio2.this,pizzahut.class);
+
+                MenuInicio2.this.startActivity(intent);
+            }
+        });
+
+
+
+    }
+
+
+    public void pizzahutbtn(){
+         btnpizzahut = (ImageButton) findViewById(R.id.pizzahut);
+
+        btnpizzahut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MenuInicio2.this,pizzahut.class);
+
+                MenuInicio2.this.startActivity(intent);
+            }
+        });
 
     }
 }
