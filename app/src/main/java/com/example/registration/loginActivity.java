@@ -58,6 +58,7 @@ public class loginActivity extends AppCompatActivity {
 
     public void verificarCredenciales(){
         String email = txtInputEmail.getText().toString();
+
         final String password = txtInputPassword.getText().toString();
 
         if(email.isEmpty() || !email.contains("@")){
