@@ -13,12 +13,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".PedidoExitBrasa" ></activity>
+        <activity android:name=".pedido_exit_popeyes" > </activity>
+        <activity android:name=".detalle_popeyes" />
+        <activity android:name=".visor_imagen_popeyes" />
+        <activity android:name=".popeyes" />
+        <activity android:name=".PedidoExitBrasa" />
         <activity android:name=".DetalleBrasaRoja" />
         <activity android:name=".VisorImagenBrasa" />
         <activity android:name=".brazaroja" />
-        <activity android:name=".MenuInicio2"/>
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".MenuInicio2" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".loginActivity" />
         <activity android:name=".inicio">

@@ -34,6 +34,16 @@ public class MenuInicio2 extends AppCompatActivity {
             }
         });
 
+        ImageButton btnpopeyes = (ImageButton) findViewById(R.id.popeyes);
+
+        btnpopeyes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MenuInicio2.this,popeyes.class);
+
+                MenuInicio2.this.startActivity(intent);
+            }
+        });
 
     }
 }
