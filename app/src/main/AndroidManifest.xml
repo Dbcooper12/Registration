@@ -18,7 +18,6 @@
         <activity android:name=".VisorImagenPizza" />
         <activity android:name=".pizzahut" />
         <activity android:name=".PedidoExitBrasa" />
-        <activit android:name=".PedidoCompletoBrasa"/>
         <activity android:name=".DetalleBrasaRoja" />
         <activity android:name=".VisorImagenBrasa" />
         <activity android:name=".brazaroja" />
