@@ -11,8 +11,8 @@ import android.widget.ListView;
 public class pizzahut extends AppCompatActivity {
     ListView lista;
     String[][] datos = {
-            {"Pizza Americana","Pizza Hut","S/.41.90","9","2020/11/","Monica Samillan"},
-            {"Pizza Pepperoni","Pizza Hut","S/.51.90","7","2020/11/","Paul Zapata" }
+            {"Pizza Americana","Pizza Hut","S/.41.90","9","2020/11/21","Monica Samillan"},
+            {"Pizza Pepperoni","Pizza Hut","S/.51.90","7","2020/11/21","Paul Zapata" }
     };
     int[] datosImg = {R.drawable.americana,R.drawable.pepperoni};
     @Override

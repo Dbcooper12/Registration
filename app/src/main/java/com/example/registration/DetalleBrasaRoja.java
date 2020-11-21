@@ -13,13 +13,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 public class DetalleBrasaRoja extends AppCompatActivity {
     EditText etCantidad,etnombre,ettelefono;
-
+    FirebaseAuth mAuth;
+    TextView userNombre,userEmail;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +36,10 @@ public class DetalleBrasaRoja extends AppCompatActivity {
 
         etnombre =  (EditText) findViewById(R.id.nombrePer);
         ettelefono =  (EditText) findViewById(R.id.telefonoPer);
-
+        userEmail = findViewById(R.id.nombrePer);
+        mAuth = FirebaseAuth.getInstance();
+        FirebaseUser user = mAuth.getCurrentUser();
+        userEmail.setText(user.getEmail());
         Intent intent = getIntent();
         Bundle b = intent.getExtras();
 

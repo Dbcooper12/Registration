@@ -12,8 +12,8 @@ public class brazaroja extends AppCompatActivity {
 
  ListView lista;
  String[][] datos = {
-         {"Pollo a la brasa roja","brasa roja","S/.54.00","9","2020/11/","Jose Calderon"},
-         {"Pollo broaster","brasa roja","S/.54.90","7","2020/11/","Maria Perez" }
+         {"Pollo a la brasa roja","brasa roja","S/.54.00","9","2020/11/21","Jose Calderon"},
+         {"Pollo broaster","brasa roja","S/.54.90","7","2020/11/21","Maria Perez" }
  };
   int[] datosImg = {R.drawable.polloalbraza,R.drawable.pollobroaster};
 
