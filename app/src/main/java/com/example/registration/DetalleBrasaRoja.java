@@ -70,11 +70,11 @@ public class DetalleBrasaRoja extends AppCompatActivity {
                             JSONObject jsonResponse = new JSONObject(response);
                             boolean success = jsonResponse.getBoolean("success");
                             if (success) {
-                                Intent intent = new Intent(DetalleBrasaRoja.this,PedidoCompletoBrasa.class);
+                                Intent intent = new Intent(DetalleBrasaRoja.this,PedidoExitBrasa.class);
                                 DetalleBrasaRoja.this.startActivity(intent);
                             } else {
                                 AlertDialog.Builder builder = new AlertDialog.Builder(DetalleBrasaRoja.this);
-                                builder.setMessage("Error registro").setNegativeButton("Retry", null).create().show();
+                                builder.setMessage("Error Pedido").setNegativeButton("Retry", null).create().show();
                             }
                         } catch (JSONException e) {
                             e.printStackTrace();

@@ -27,7 +27,9 @@ public class loginActivity extends AppCompatActivity {
     EditText txtInputEmail, txtInputPassword;
     Button btnLogin;
     FirebaseAuth mAuth;
+
     private ProgressDialog mProgressBar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
@@ -58,6 +60,7 @@ public class loginActivity extends AppCompatActivity {
 
     public void verificarCredenciales(){
         String email = txtInputEmail.getText().toString();
+
 
         final String password = txtInputPassword.getText().toString();
 
