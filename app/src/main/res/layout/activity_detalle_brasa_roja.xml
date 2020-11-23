@@ -182,7 +182,9 @@
         app:layout_constraintHorizontal_bias="0.21"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
+        app:layout_constraintVertical_bias="0.976"
+        android:background="@drawable/btn_eliminarcta"
+        android:textColor="@color/colorWhite"/>
 
     <EditText
         android:id="@+id/PersonalEntrega"
@@ -208,7 +210,9 @@
         app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
+        app:layout_constraintVertical_bias="0.976"
+        android:background="@drawable/btn_logout"
+        android:textColor="@color/colorWhite"/>
 
     <ImageView
         android:id="@+id/imageView"

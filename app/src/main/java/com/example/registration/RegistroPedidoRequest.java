@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class RegistroPedidoRequest extends StringRequest {
-    private static final String REGISTER_REQUESTE_URL="http://192.168.43.220/Registro_usuario_Prueba/registrarPedido.php";
+    private static final String REGISTER_REQUESTE_URL="http://192.168.1.180/Registro_usuario_Prueba/registrarPedido.php";
     private Map<String, String> params;
     public RegistroPedidoRequest(String personaEntrega, String cantidad, String fecha, String precio, String nombre, String telefono, Response.Listener<String> listener) {
         super(Request.Method.POST,REGISTER_REQUESTE_URL,listener,null);

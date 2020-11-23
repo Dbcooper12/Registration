@@ -7,41 +7,103 @@
     android:background="@drawable/gradiente_background"
     tools:context=".pedido_exit_popeyes">
 
+    <EditText
+        android:id="@+id/et_sourece"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:hint="Enter Source location 1 "
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32" />
+
+    <EditText
+        android:id="@+id/et_destubation"
+        android:layout_width="409dp"
+        android:layout_height="54dp"
+        android:background="@android:drawable/editbox_background"
+        android:hint="Enter Source location 2"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_sourece"
+        app:layout_constraintVertical_bias="0.647" />
+
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="308dp"
-        android:layout_height="152dp"
+        android:layout_width="326dp"
+        android:layout_height="100dp"
         android:fontFamily="@font/bangers"
         android:text="Pedido Exitoso ."
         android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.143" />
+        app:layout_constraintVertical_bias="0.093" />
 
     <Button
-        android:id="@+id/btnmapaB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/bt_track"
+        android:layout_width="123dp"
+        android:layout_height="68dp"
+        android:background="@drawable/btn_eliminarcta"
         android:fontFamily="@font/abril_fatface"
+
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
         android:text="ir a mapa"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.831" />
+        app:layout_constraintVertical_bias="0.866" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="290dp"
-        android:layout_height="293dp"
-        android:layout_marginTop="252dp"
+        android:layout_width="281dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="392dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.595"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/moto" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="TU UBICACION ACTUAL"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_sourece"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.935" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="UBICACION DE LA EMPRESA"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_destubation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_sourece"
+        app:layout_constraintVertical_bias="0.703" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

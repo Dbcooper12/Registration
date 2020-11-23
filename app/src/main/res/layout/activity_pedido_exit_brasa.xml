@@ -49,22 +49,29 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.093" />
 
+
     <Button
         android:id="@+id/bt_track"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="123dp"
+        android:layout_height="68dp"
+        android:background="@drawable/btn_eliminarcta"
         android:fontFamily="@font/abril_fatface"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
         android:text="ir a mapa"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.837" />
+        app:layout_constraintVertical_bias="0.866" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="281dp"
-        android:layout_height="154dp"
+        android:layout_width="306dp"
+        android:layout_height="168dp"
         android:layout_marginTop="392dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -75,6 +82,7 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
         android:text="TU UBICACION ACTUAL"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/et_sourece"
@@ -88,6 +96,7 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
         android:text="UBICACION DE LA EMPRESA"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/et_destubation"
