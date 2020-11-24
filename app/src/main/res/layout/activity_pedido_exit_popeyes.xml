@@ -23,8 +23,8 @@
 
     <EditText
         android:id="@+id/et_destubation"
-        android:layout_width="394dp"
-        android:layout_height="58dp"
+        android:layout_width="410dp"
+        android:layout_height="52dp"
         android:background="@android:drawable/editbox_background"
         android:hint="Enter Source location 2"
         android:padding="8dp"
@@ -108,9 +108,8 @@
 
     <Button
         android:id="@+id/btnConfi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="116dp"
+        android:layout_width="199dp"
+        android:layout_height="47dp"
         android:background="@drawable/btn_logout"
         android:paddingStart="5dp"
         android:paddingEnd="5dp"
@@ -118,7 +117,7 @@
         android:textAllCaps="false"
         android:textColor="@color/colorWhite"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnEliminarCta"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

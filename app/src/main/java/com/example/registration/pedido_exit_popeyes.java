@@ -43,7 +43,7 @@ public class pedido_exit_popeyes extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Toast.makeText(getApplicationContext(),"Pedido confirmado Exitosamente",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Pedido Entregado Exitosamente",Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(pedido_exit_popeyes.this,MenuInicio2.class);
                 pedido_exit_popeyes.this.startActivity(intent);
 

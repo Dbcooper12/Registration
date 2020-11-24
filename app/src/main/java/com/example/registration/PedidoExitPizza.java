@@ -42,7 +42,7 @@ public class PedidoExitPizza extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Toast.makeText(getApplicationContext(),"Pedido confirmado Exitosamente",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Pedido Entregado Exitosamente",Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(PedidoExitPizza.this,MenuInicio2.class);
                 PedidoExitPizza.this.startActivity(intent);
 
