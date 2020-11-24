@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 public class pedido_exit_popeyes extends AppCompatActivity {
     EditText etSource, etDestination;
-    Button btTrack;
+    Button btTrack, btnconfi;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +21,7 @@ public class pedido_exit_popeyes extends AppCompatActivity {
         etSource = findViewById(R.id.et_sourece);
         etDestination= findViewById(R.id.et_destubation);
         btTrack  = (Button) findViewById(R.id.bt_track);
+        btnconfi = (Button) findViewById(R.id.btnConfi);
 
         etSource.setText("Calle Mariscal Domingo Nieto 490, Chiclayo");
         etDestination.setText("Popeyes, Avenida General Arenales, Chiclayo");
@@ -35,6 +36,17 @@ public class pedido_exit_popeyes extends AppCompatActivity {
                 }else{
                     DisplayTrack(sSource,sDestination);
                 }
+            }
+        });
+
+        btnconfi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Toast.makeText(getApplicationContext(),"Pedido confirmado Exitosamente",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(pedido_exit_popeyes.this,MenuInicio2.class);
+                pedido_exit_popeyes.this.startActivity(intent);
+
             }
         });
 

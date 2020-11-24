@@ -24,11 +24,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthCredential;
-import com.google.firebase.auth.EmailAuthCredential;
 import com.google.firebase.auth.EmailAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -59,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         userImg = findViewById(R.id.userImagen);
         mAuth = FirebaseAuth.getInstance();
         FirebaseUser user = mAuth.getCurrentUser();
-        btnCerrarSesion = findViewById(R.id.btnLogout);
+        btnCerrarSesion = findViewById(R.id.btnConfi);
         btnEliminarCta = findViewById(R.id.btnEliminarCta);
         ///Camara
         picture = findViewById(R.id.userImagen);

@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 public class PedidoExitPizza extends AppCompatActivity {
     EditText etSource, etDestination;
-    Button btTrack;
+    Button btTrack, btnconfi;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +21,7 @@ public class PedidoExitPizza extends AppCompatActivity {
         etSource = findViewById(R.id.et_sourece);
         etDestination= findViewById(R.id.et_destubation);
         btTrack  = (Button) findViewById(R.id.bt_track);
+        btnconfi = (Button) findViewById(R.id.btnConfi);
 
         etSource.setText("Los Claveles 37,José Leonardo Ortiz, Perú");
         etDestination.setText("Pizza Hut, Real, Chiclayo");
@@ -37,7 +38,16 @@ public class PedidoExitPizza extends AppCompatActivity {
                 }
             }
         });
+        btnconfi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
+                Toast.makeText(getApplicationContext(),"Pedido confirmado Exitosamente",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(PedidoExitPizza.this,MenuInicio2.class);
+                PedidoExitPizza.this.startActivity(intent);
+
+            }
+        });
 
     }
 

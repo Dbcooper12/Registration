@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class PedidoExitBrasa extends AppCompatActivity {
 
     EditText etSource, etDestination;
-    Button btTrack;
+    Button btTrack, btnconfi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +24,7 @@ public class PedidoExitBrasa extends AppCompatActivity {
         etSource = findViewById(R.id.et_sourece);
         etDestination= findViewById(R.id.et_destubation);
         btTrack  = (Button) findViewById(R.id.bt_track);
+        btnconfi = (Button) findViewById(R.id.btnConfi);
 
         etSource.setText("Pariñas 520, Chiclayo 14009");
         etDestination.setText("Brasa Roja, Av. Sta. Victoria 700, Chiclayo 14008");
@@ -38,6 +39,16 @@ public class PedidoExitBrasa extends AppCompatActivity {
                 }else{
                     DisplayTrack(sSource,sDestination);
                 }
+            }
+        });
+        btnconfi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Toast.makeText(getApplicationContext(),"Pedido confirmado Exitosamente",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(PedidoExitBrasa.this,MenuInicio2.class);
+                PedidoExitBrasa.this.startActivity(intent);
+
             }
         });
 

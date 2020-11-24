@@ -6,34 +6,35 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradiente_background"
     tools:context=".PedidoExitPizza">
+
+
     <EditText
         android:id="@+id/et_sourece"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="392dp"
+        android:layout_height="51dp"
         android:background="@android:drawable/editbox_background"
         android:hint="Enter Source location 1 "
         android:padding="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.32" />
 
-
     <EditText
         android:id="@+id/et_destubation"
-        android:layout_width="409dp"
-        android:layout_height="54dp"
+        android:layout_width="394dp"
+        android:layout_height="51dp"
         android:background="@android:drawable/editbox_background"
         android:hint="Enter Source location 2"
         android:padding="8dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.588"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_sourece"
-        app:layout_constraintVertical_bias="0.319" />
+        app:layout_constraintVertical_bias="0.317" />
 
     <TextView
         android:id="@+id/textView5"
@@ -107,7 +108,7 @@
         app:layout_constraintVertical_bias="0.702" />
 
     <Button
-        android:id="@+id/btnLogout"
+        android:id="@+id/btnConfi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="116dp"
