@@ -173,6 +173,7 @@
         android:layout_width="251dp"
         android:layout_height="47dp"
         android:text="Menu Principal"
+        android:background="@drawable/btn_bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
