@@ -63,19 +63,19 @@
                 android:id="@+id/brasaroja"
                 android:layout_width="wrap_content"
                 android:layout_height="197dp"
-                app:srcCompat="@drawable/labrasa" />
+                app:srcCompat="@drawable/labrasarojaa" />
 
             <ImageButton
                 android:id="@+id/popeyes"
                 android:layout_width="277dp"
                 android:layout_height="132dp"
-                app:srcCompat="@drawable/popeyes" />
+                app:srcCompat="@drawable/popepyes" />
 
             <ImageButton
                 android:id="@+id/pizzahut"
                 android:layout_width="wrap_content"
                 android:layout_height="185dp"
-                app:srcCompat="@drawable/pizaa" />
+                app:srcCompat="@drawable/pizzahut" />
 
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
